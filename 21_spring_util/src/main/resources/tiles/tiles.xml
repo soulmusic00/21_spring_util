@@ -58,24 +58,24 @@
  
 <tiles-definitions>
 
-	<definition name="default"  template="/WEB-INF/views/tilesEx/layout.jsp">	 <!-- 화면 템플릿 구성 -->
-		<put-attribute name="header" value="/WEB-INF/views/tilesEx/header.jsp"/> <!-- 일반적으로 화면의 상단부 -->
-		<put-attribute name="footer" value="/WEB-INF/views/tilesEx/footer.jsp"/> <!-- 일반적으로 화면의 하단부 -->
-		<put-attribute name="menu" 	 value="/WEB-INF/views/tilesEx/side.jsp"/>	 <!-- 일반적으로 화면의 메뉴 -->
+	<definition name="default"  template="/WEB-INF/views/tiles/tilesEx/layout.jsp">	 <!-- 화면 템플릿 구성 -->
+		<put-attribute name="header" value="/WEB-INF/views/tiles/tilesEx/header.jsp"/> <!-- 일반적으로 화면의 상단부 -->
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/tilesEx/footer.jsp"/> <!-- 일반적으로 화면의 하단부 -->
+		<put-attribute name="menu" 	 value="/WEB-INF/views/tiles/tilesEx/side.jsp"/>	 <!-- 일반적으로 화면의 메뉴 -->
 	</definition>
 	
 	<definition name="tilesEx/content1" extends="default">
-		<put-attribute name="content" value="/WEB-INF/views/tilesEx/content1.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/views/tiles/tilesEx/content1.jsp"/>
 		<put-attribute name="title"   value="content1"/>
 	</definition>
 	
 	<definition name="abcde" extends="default">
-		<put-attribute name="content" value="/WEB-INF/views/tilesEx/content2.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/views/tiles/tilesEx/content2.jsp"/>
 		<put-attribute name="title"   value="content2"/>
 	</definition>
 	
 	<definition name="a/b" extends="default">
-		<put-attribute name="content" value="/WEB-INF/views/tilesEx/content3.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/views/tiles/tilesEx/content3.jsp"/>
 		<put-attribute name="title"   value="content3"/>
 	</definition>
 	
